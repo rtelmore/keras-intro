@@ -18,7 +18,7 @@ network <- keras_model_sequential() %>%
 network %>% compile(
   optimizer = "rmsprop",
   loss = "categorical_crossentropy",
-  metrics = c("accuracy"))
+  metrics = c("accuracy")
 )
 
 train_images <- array_reshape(train_images, c(60000, 28*28)) / 255
